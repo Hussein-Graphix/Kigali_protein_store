@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kigali Protein Store</title>
+  <meta name="description" content="Kigali Protein Store - protein supplements, mass gainers, creatine, vitamins and pre-workout products." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Kigali Protein Store home">
+        <img src="assets/logo.png" alt="Kigali Protein Store logo" />
+        <div>
+          <span class="brand-name">Kigali Protein Store</span>
+          <span class="brand-tag">Fuel your fitness journey</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#store" class="nav-link">Store</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="search" id="searchInput" placeholder="Search product..." aria-label="Search products" />
+        </div>
+        <button class="cart-btn" id="openCartBtn" aria-label="Open shopping cart">
+          <span>Cart</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Welcome to</span>
+          <h1>Kigali Protein Store</h1>
+          <p>
+            Quality supplements, clean design, and a real checkout flow built for fast online orders.
+            Browse products, add them to cart, and send your order directly to WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a href="#store" class="btn btn-primary">Shop Now</a>
+            <button class="btn btn-secondary" id="heroWhatsappBtn">Order on WhatsApp</button>
+          </div>
+          <div class="hero-features">
+            <div><strong>Fast</strong><span>WhatsApp checkout</span></div>
+            <div><strong>Secure</strong><span>Cart stored locally</span></div>
+            <div><strong>Ready</strong><span>HTML, CSS & JS deployable</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/hero-products.png" alt="Kigali Protein Store featured supplements" />
+        </div>
+      </div>
+    </section>
+
+    <section class="store-section" id="store">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Our Store</span>
+            <h2>Featured supplements by category</h2>
+          </div>
+          <div class="store-tools">
+            <select id="categoryFilter" aria-label="Filter by category">
+              <option value="all">All Categories</option>
+              <option value="whey">Whey Protein</option>
+              <option value="mass">Mass Gainer</option>
+              <option value="creatine">Creatine</option>
+              <option value="preworkout">Pre Workout</option>
+              <option value="vitamins">Vitamins</option>
+              <option value="recovery">Recovery / BCAA</option>
+            </select>
+            <select id="sortFilter" aria-label="Sort products">
+              <option value="default">Sort</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name: A to Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="category-pills" id="categoryPills">
+          <button class="pill active" data-category="all">All</button>
+          <button class="pill" data-category="whey">Whey Protein</button>
+          <button class="pill" data-category="mass">Mass Gainer</button>
+          <button class="pill" data-category="creatine">Creatine</button>
+          <button class="pill" data-category="preworkout">Pre Workout</button>
+          <button class="pill" data-category="vitamins">Vitamins</button>
+          <button class="pill" data-category="recovery">Recovery / BCAA</button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-card">
+          <span class="section-kicker">About Us</span>
+          <h2>Built to feel like the reference design, but with real ecommerce behavior.</h2>
+          <p>
+            Kigali Protein Store helps customers shop supplements quickly and confidently. This clone-inspired
+            version keeps the clean visual direction of your reference while upgrading it into a working storefront.
+          </p>
+        </div>
+        <div class="about-list">
+          <article>
+            <h3>Real cart flow</h3>
+            <p>Add products, update quantity, remove items, and keep the cart saved in the browser.</p>
+          </article>
+          <article>
+            <h3>WhatsApp checkout</h3>
+            <p>The checkout button prepares a clean order summary and opens WhatsApp with the selected products.</p>
+          </article>
+          <article>
+            <h3>Deploy ready</h3>
+            <p>Files are separated into <strong>index.html</strong>, <strong>style.css</strong>, and <strong>script.js</strong> for easy edits and hosting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-kicker">Contact</span>
+          <h2>Ready to receive orders</h2>
+          <p>Update the WhatsApp number inside <strong>script.js</strong> with the business number you want customers to contact.</p>
+        </div>
+        <div class="contact-box">
+          <p><strong>Checkout flow:</strong> Cart → Checkout → WhatsApp message</p>
+          <p><strong>Best for hosting on:</strong> Netlify, Vercel static hosting, GitHub Pages, cPanel</p>
+          <a class="btn btn-primary" href="#store">Start Shopping</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-panel">
+      <div class="cart-header">
+        <div>
+          <span class="section-kicker">Shopping Cart</span>
+          <h3>Your selected products</h3>
+        </div>
+        <button class="icon-btn" id="closeCartBtn" aria-label="Close cart">✕</button>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="cart-footer">
+        <div class="cart-total-line">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">0 Frw</strong>
+        </div>
+        <div class="cart-total-line small">
+          <span>Delivery</span>
+          <span>Calculated on WhatsApp</span>
+        </div>
+        <button class="btn btn-primary btn-full" id="checkoutBtn">Checkout via WhatsApp</button>
+        <button class="btn btn-secondary btn-full" id="clearCartBtn">Clear Cart</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
